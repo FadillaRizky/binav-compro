@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Binav AVTS</title>
+  </head>
+  <body>
+    <section id="home" class="intro-image">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <img src="./assets/logo_transparent.png" alt="logo" class="logo" />
+          <!-- <span class="company-name">Binav Maju Sejahtera</span> -->
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#ourclient">Our Client</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://binav-avts.id/"><button class="nav-cta-button">Vessel AVTS</button></a></li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <div class="content-inner">
+          <div class="text-content">
+            <h1 style="font-weight: bold; font-size: 2em">
+              Welcome to PT. Binav Maju Sejahtera
+            </h1>
+            <h4>
+              Solusi canggih mengelola armada secara efisien,<br />
+              meningkatkan produktivitas, <br />
+              dan meningkatkan keamanan operasional
+            </h4>
+            <!-- <p>
+              Solusi canggih mengelola armada secara efisien,<br />
+              meningkatkan produktivitas, dan meningkatkan keamanan operasional
+            </p> -->
+          </div>
+          <div class="button-container">
+            <a href="#about">
+              <button class="cta-button">
+                Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-section">
+      <br />
+      <h1 style="text-align: center; color: white">About</h1>
+      <br />
+      <div class="about-content">
+        <div class="row">
+          <div class="col">
+            <img
+              src="./assets/about_us.png"
+              alt="about_us"
+              style="height: 400px"
+            />
+          </div>
+          <div class="col col-text" style="text-align: left">
+            <h2 style="font-weight: 600; color: white">
+              PT. BINAV MAJU SEJAHTERA
+            </h2>
+            <br />
+            <p style="font-size: medium; color: white">
+              Selamat datang di PT. Binav Maju Sejahtera, pusat inovasi
+              pemetaan, survei, dan produk kartografi yang terkemuka. Sejak
+              awal, kami memimpin industri dengan dedikasi tinggi dalam
+              menyajikan solusi pemetaan yang terdepan dan terpercaya.
+            </p>
+            <p style="font-size: medium; color: white">
+              Komitmen kami terhadap ketepatan, keakuratan, dan ketelitian
+              menjadi landasan utama dalam setiap layanan kami. Dengan
+              menggunakan teknologi modern dan tim ahli berpengalaman, kami
+              mendedikasikan diri untuk memberikan solusi pemetaan dengan
+              mengubah pandangan menjadi realitas yang dapat diandalkan.
+            </p>
+            <p style="font-size: medium; color: white">
+              Kami tak hanya sekadar menawarkan layanan pemetaan dan survei
+              berkualitas tinggi, tetapi juga menghasilkan produk kartografi
+              inovatif yang memenuhi kebutuhan unik setiap klien kami. Setiap
+              produk kami, dibuat dengan akurat dan terampil untuk memastikan
+              kepuasan pelanggan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="service-section" style="padding: 30px">
+      <br />
+      <h1 style="text-align: center; color: white">Services</h1>
+      <br />
+      <div class="service-types">
+        <div class="service-type active" onclick="showServices('geophysical')">
+          Geophysical Survey Services
+        </div>
+        <div class="service-type" onclick="showServices('offshore')">
+          Offshore Positioning Support
+        </div>
+      </div>
+      <div id="geophysicalServices" class="services-grid">
+        <!-- Geophysical Survey Services content -->
+        <div class="service-card">
+          <h3>Pre-Engineering Survey</h3>
+          <p>
+            Before any installation on the seabed, it is necessary to conduct
+            pre-engineering survey on the proposed installation location or
+            ro...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Pre-Installation Survey</h3>
+          <p>
+            The design of subsea routes or any subsea constructions normally
+            takes a long period of time to be completed. When a
+            pre-engineerin...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Post-lay Survey</h3>
+          <p>
+            After the installation of pipeline, post-lay survey operation plays
+            a vital route in determining the free span locations. Spans should
+            be c...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Geophysical Site Survey</h3>
+          <p>
+            Geophysical data provides vital information on the geology of the
+            sub-bottom strata, required for any engineering, construction,
+            drilling, ...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <!-- Add more geophysical service cards here -->
+      </div>
+      <div id="offshoreServices" class="services-grid" style="display: none">
+        <div class="service-card">
+          <h3>Barge And Tug Positioning</h3>
+          <p>
+            A precise positioning is a fundamental parameter for any survey and
+            engineering tasks during sea operations. Such operations re...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Pipe & Cable Laying Survey Support</h3>
+          <p>
+            We offer the following activities during construction survey
+            support.
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Rig Positioning Services</h3>
+          <p>
+            A rig movement will be done when Mobile Offshore Drilling Unit
+            (MODU) moves from one well location to another. Our profession...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Jacket/Topside Installation and dimension control Services</h3>
+          <p>
+            We have sufficient experience in jacket and subsea installation by
+            utilizing the most recent methods and technologies. Precise
+            positioni...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Jacket/Topside Installation and dimension control Services</h3>
+          <p>
+            We have sufficient experience in jacket and subsea installation by
+            utilizing the most recent methods and technologies. Precise
+            positioni...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+        <div class="service-card">
+          <h3>Jacket/Topside Installation and dimension control Services</h3>
+          <p>
+            We have sufficient experience in jacket and subsea installation by
+            utilizing the most recent methods and technologies. Precise
+            positioni...
+          </p>
+          <button class="view-more">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="bg-section" style="padding: 30px">
+      <br />
+      <h1 style="text-align: center; color: white">Gallery</h1>
+      <br />
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="assets/gallery1.jpg" alt="Typography" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery2.jpg" alt="Print" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery3.jpg" alt="Branding" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery4.jpg" alt="Illustration" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery5.jpg" alt="Web Design" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery6.jpg" alt="Web Design" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ourclient" class="bg-section" style="padding: 30px">
+      <br />
+      <h1 style="text-align: center; color: white">Our Client</h1>
+      <br />
+      <div class="grid-container">
+        <!-- JavaScript will populate this container with 28 images -->
+      </div>
+    </section>
+
+    <section id="ourclient" class="bg-section" style="padding: 30px">
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      function showServices(serviceType) {
+        const geophysical = document.getElementById("geophysicalServices");
+        const offshore = document.getElementById("offshoreServices");
+        const menuItems = document.querySelectorAll(".service-type");
+
+        if (serviceType === "geophysical") {
+          geophysical.style.display = "grid";
+          offshore.style.display = "none";
+        } else {
+          geophysical.style.display = "none";
+          offshore.style.display = "grid";
+        }
+
+        menuItems.forEach((item) => {
+          item.classList.remove("active");
+          if (item.textContent.toLowerCase().includes(serviceType)) {
+            item.classList.add("active");
+          }
+        });
+      }
+
+      const carousel = document.querySelector(".carousel");
+      const items = document.querySelectorAll(".carousel-item");
+
+      // Clone items and append to carousel
+      items.forEach((item) => {
+        const clone = item.cloneNode(true);
+        carousel.appendChild(clone);
+      });
+
+      let position = 0;
+      const speed = 1; // Adjust this value to change the sliding speed
+
+      function slide() {
+        position -= speed;
+        const itemWidth =
+          items[0].offsetWidth +
+          parseInt(window.getComputedStyle(items[0]).marginLeft) * 2;
+        const totalWidth = itemWidth * items.length;
+
+        if (Math.abs(position) >= totalWidth) {
+          position = 0;
+          carousel.style.transition = "none";
+          carousel.style.transform = `translateX(0px)`;
+          // Force reflow
+          carousel.offsetHeight;
+          carousel.style.transition = "transform 0.1s linear";
+        } else {
+          carousel.style.transform = `translateX(${position}px)`;
+        }
+
+        requestAnimationFrame(slide);
+      }
+
+      slide();
+
+      const gridContainer = document.querySelector(".grid-container");
+      const totalImages = 28;
+      const client = [
+        "PT. Anadarko.png",
+        "PT. Apexindo.png",
+        "PT. Aquamarine.png",
+        "PT. Arung.jpg",
+        "PT. Arutmin.jpg",
+        "PT. BKI.png",
+        "PT. Chevron.png",
+        "PT. CNOOC.jpg",
+        "PT. Dewirahmi.png",
+        "PT. Elnusa.png",
+        "PT. Feria.png",
+        "PT. Geo Ocean.png",
+        "PT. Geotindo.png",
+        "PT. Golder Associates.png",
+        "PT. IndoSraits.png",
+        "PT. JDI.jpg",
+        "PT. Kideco.png",
+        "PT. Lancar Rejeki.png",
+        "PT. Maspion.jpg",
+        "PT. Meindo.png",
+        "PT. Modern Widya Tehnical.png",
+        "PT. ModernWidya.jpg",
+        "PT. Onasis.png",
+        "PT. PancaDuta.png",
+        "PT. PDC.jpg",
+        "PT. Pertamina PHM.jpg",
+        "PT. PutraTunggalMandiri.jpg",
+        "PT. Raga Perkasa Ekaguna.jpg",
+        "PT. Taka.png",
+      ];
+
+      for (let i = 1; i <= totalImages; i++) {
+        const gridItem = document.createElement("div");
+        gridItem.classList.add("grid-item");
+
+        const img = document.createElement("img");
+        img.src = `assets/client/${client[i]}`;
+        img.alt = `${client[i]}`;
+
+        const overlay = document.createElement("div");
+        overlay.classList.add("overlay");
+        /// remove char image extention
+        const lastDotIndex = client[i].lastIndexOf(".");
+        client[i] = client[i].substring(0, lastDotIndex);
+        overlay.textContent = `${client[i]}`;
+
+        gridItem.appendChild(img);
+        gridItem.appendChild(overlay);
+        gridContainer.appendChild(gridItem);
+      }
+    </script>
+  </body>
+</html>

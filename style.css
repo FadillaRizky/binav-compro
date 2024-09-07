@@ -5,6 +5,11 @@ html, body {
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: #011B2B;
+    --secondary-color: #02253a;
+  }
+
 .intro-image {
     height: 100vh;
     background-image: url(./assets/intro4.jpg);
@@ -61,6 +66,9 @@ html, body {
     background-color: #0052a3;
 }
 
+.bg-gallery{
+    background-color: var(--secondary-color);
+}
 /* Content styles */
 .content {
     flex-grow: 1;
@@ -114,6 +122,10 @@ html, body {
     background-color: #011B2B;
 }
 
+.bg-about{
+    background-color: var(--secondary-color);
+}
+
 .about-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -124,12 +136,15 @@ html, body {
     max-height: 400px;
     object-fit: cover;
 }
+.desc-content h2,p{
+color: #fff;
+}
 
 /* Services section styles */
 .service-section {
     display: flex;
     flex-direction: column;
-    background-color: #011B2B;
+    background-color: var(--primary-color);
 }
 
 .service-types {
@@ -284,3 +299,98 @@ html, body {
       height: 100px;
     }
   }
+
+
+  footer {
+    background-color: #011B2B;
+  }
+  
+  footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #0066cc !important;
+  }
+  
+  footer .fab {
+    font-size: 1.5rem;
+  }
+
+
+   .contact-container {
+            display: flex;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .contact-form {
+            flex: 2;
+            padding: 30px;
+        }
+        .contact-info {
+            flex: 1;
+            background-color: #12335e;
+            color: #fff;
+            padding: 30px;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-input{
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+            .contact-form, .contact-info {
+                width: 100%;
+            }
+        }
+
+.bg-footer{
+    /* background-image: url(./assets/about_us.png); */
+background-color: var(--primary-color)
+}

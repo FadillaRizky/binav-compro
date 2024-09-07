@@ -33,7 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="#ourclient">Our Client</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="btn btn-primary" href="https://binav-avts.id/">Vessel AVTS</a></li>
+            <li class="nav-item" style="margin-left: 0.5rem;"><a class="btn btn-primary" href="https://binav-avts.id/">Vessel AVTS</a></li>
           </ul>
         </div>
       </div>
@@ -66,15 +66,14 @@
       </div>
     </section>
 
-    <section id="about" class="py-5">
+    <section id="about" class="bg-about py-5">
       <div class="container">
-
-        <h1 class="text-center text-black mb-5">About Us</h1>
+        <h1 class="text-center text-white mb-5">About Us</h1>
         <div class="row align-items-center">
           <div class="col-md-6 mb-4 mb-md-0">
             <img src="./assets/about_us.png" alt="about_us" class="img-fluid rounded" />
           </div>
-          <div class="col-md-6">
+          <div class="desc-content col-md-6">
             <h2 class="mb-4">PT. BINAV MAJU SEJAHTERA</h2>
             <p>Selamat datang di PT. Binav Maju Sejahtera, pusat inovasi pemetaan, survei, dan produk kartografi yang terkemuka. Sejak awal, kami
               memimpin industri dengan dedikasi tinggi dalam menyajikan solusi pemetaan yang terdepan dan terpercaya.</p>
@@ -89,7 +88,7 @@
       </div>
     </section>
 
-    <section id="services" class="service-section py-5" style="background-color: #011B2B;">
+    <section id="services" class="service-section py-5">
       <div class="container">
         <h1 class="text-center text-white mb-5">Services</h1>
         <div class="service-types mb-4">
@@ -235,9 +234,9 @@
       </div>
     </section>
 
-    <section id="gallery" class style="padding: 30px">
+    <section id="gallery" class="bg-gallery" style="padding: 30px">
       <br />
-      <h1 class="text-center text-black mb-5">Gallery</h1>
+      <h1 class="text-center text-white mb-5">Gallery</h1>
       <br />
       <div class="carousel1-container">
         <div class="carousel1">
@@ -271,6 +270,78 @@
         </div>
       </div>
     </section>
+
+    <section id="contact" class="contact-container">
+      <div class="contact-form">
+          <h2>Send us a Message</h2>
+          <form id="contactForm">
+              <input type="text" placeholder="Your Name" class="form-input" required>
+              <input type="email" placeholder="Your Email" class="form-input" required>
+              <input type="tel" placeholder="Phone Number" class="form-input">
+              <input type="text" placeholder="Company Name" class="form-input">
+              <textarea placeholder="Your Message" rows="4" class="form-input" required></textarea>
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+      <div class="contact-info">
+          <h2>Contact Information</h2>
+          <br>
+          <p><i class="fa-solid fa-location-dot fa-lg"></i> Jl. DI. Panjaitan No.63 RT33, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76122</p>
+          <p><i class="fa-solid fa-phone fa-lg"></i> (800) 900-200-300</p>
+          <p><i class="fa-solid fa-envelope fa-lg "></i> info@binavmajusejahtera.com</p>
+          <!-- <div class="social-links">
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Facebook">f</a>
+          </div> -->
+      </div>
+    </section>
+
+    <footer class="bg-footer text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">About PT. Binav Maju Sejahtera</h5>
+            <p>We are a leading provider of innovative mapping, surveying, and cartographic products. Our commitment to precision and excellence drives us to deliver cutting-edge solutions for efficient fleet management and operational safety.</p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-light">Home</a></li>
+              <li><a href="#about" class="text-light">About Us</a></li>
+              <li><a href="#services" class="text-light">Services</a></li>
+              <li><a href="#gallery" class="text-light">Gallery</a></li>
+              <li><a href="#ourclient" class="text-light">Our Clients</a></li>
+              <li><a href="https://binav-avts.id/" class="text-light">Vessel AVTS</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, Jakarta, Indonesia</li>
+              <li><i class="fas fa-phone me-2"></i> +62 123 456 7890</li>
+              <li><i class="fas fa-envelope me-2"></i> info@binavmajusejahtera.com</li>
+            </ul>
+            <div class="mt-3">
+              <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; 2024 PT. Binav Maju Sejahtera. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-light me-3">Privacy Policy</a>
+            <a href="#" class="text-light">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

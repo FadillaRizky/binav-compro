@@ -178,6 +178,20 @@ p {
   gap: 20px;
 }
 
+.card-text {
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.card-content {
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.card-text.expanded {
+  height: auto;
+}
+
 .service-card {
   background-color: white;
   border-radius: 8px;
@@ -200,14 +214,27 @@ p {
   color: #666;
 }
 
+.card-title {
+  height: 120px; /* Fixed height for title */
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
 .view-more {
   background-color: #007bff;
   color: white;
   border: none;
+  margin-top: 10px;
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
+  /* position: absolute;
+  bottom: 20px;
+  left: 20px; */
 }
 
 /* Carousel styles */

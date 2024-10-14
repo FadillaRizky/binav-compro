@@ -11,7 +11,9 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
 
     <title>Binav AVTS</title>
   </head>
@@ -21,19 +23,27 @@
         <a class="navbar-brand" href="#home">
           <img src="./assets/logo_transparent.png" alt="logo" class="logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="#ourclient">Our Client</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item" style="margin-left: 0.5rem;"><a class="btn btn-primary" href="https://binav-avts.id/">Vessel AVTS</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ourclient">Our
+                Client</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="#contact">Contact</a></li>
+            <li class="nav-item" style="margin-left: 0.5rem;"><a
+                class="btn btn-primary" href="https://binav-avts.id/">Vessel
+                AVTS</a></li>
           </ul>
         </div>
       </div>
@@ -71,17 +81,28 @@
         <h1 class="text-center text-white mb-5">About Us</h1>
         <div class="row align-items-center">
           <div class="col-md-6 mb-4 mb-md-0">
-            <img src="./assets/about_us.png" alt="about_us" class="img-fluid rounded" />
+            <img src="./assets/about_us.png" alt="about_us"
+              class="img-fluid rounded" />
           </div>
           <div class="desc-content col-md-6">
             <h2 class="mb-4">PT. BINAV MAJU SEJAHTERA</h2>
-            <p>Selamat datang di PT. Binav Maju Sejahtera, pusat inovasi pemetaan, survei, dan produk kartografi yang terkemuka. Sejak awal, kami
-              memimpin industri dengan dedikasi tinggi dalam menyajikan solusi pemetaan yang terdepan dan terpercaya.</p>
-            <p>Komitmen kami terhadap ketepatan, keakuratan, dan ketelitian menjadi landasan utama dalam setiap layanan kami. Dengan menggunakan
-              teknologi modern dan tim ahli berpengalaman, kami mendedikasikan diri untuk memberikan solusi pemetaan dengan mengubah pandangan menjadi
+            <p>Selamat datang di PT. Binav Maju Sejahtera, pusat inovasi
+              pemetaan, survei, dan produk kartografi yang terkemuka. Sejak
+              awal, kami
+              memimpin industri dengan dedikasi tinggi dalam menyajikan solusi
+              pemetaan yang terdepan dan terpercaya.</p>
+            <p>Komitmen kami terhadap ketepatan, keakuratan, dan ketelitian
+              menjadi landasan utama dalam setiap layanan kami. Dengan
+              menggunakan
+              teknologi modern dan tim ahli berpengalaman, kami mendedikasikan
+              diri untuk memberikan solusi pemetaan dengan mengubah pandangan
+              menjadi
               realitas yang dapat diandalkan.</p>
-            <p>Kami tak hanya sekadar menawarkan layanan pemetaan dan survei berkualitas tinggi, tetapi juga menghasilkan produk kartografi inovatif
-              yang memenuhi kebutuhan unik setiap klien kami. Setiap produk kami, dibuat dengan akurat dan terampil untuk memastikan kepuasan
+            <p>Kami tak hanya sekadar menawarkan layanan pemetaan dan survei
+              berkualitas tinggi, tetapi juga menghasilkan produk kartografi
+              inovatif
+              yang memenuhi kebutuhan unik setiap klien kami. Setiap produk
+              kami, dibuat dengan akurat dan terampil untuk memastikan kepuasan
               pelanggan.</p>
           </div>
         </div>
@@ -92,10 +113,12 @@
       <div class="container">
         <h1 class="text-center text-white mb-5">Services</h1>
         <div class="service-types mb-4">
-          <button class="btn btn-outline-light me-3 active" onclick="showServices('geophysical')">
+          <button class="btn btn-outline-light me-3 active"
+            onclick="showServices('geophysical')">
             Geophysical Survey Services
           </button>
-          <button class="btn btn-outline-light" onclick="showServices('offshore')">
+          <button class="btn btn-outline-light"
+            onclick="showServices('offshore')">
             Offshore Positioning Support
           </button>
         </div>
@@ -105,12 +128,16 @@
             <div class="service-card card h-100">
               <div class="card-body">
                 <h3 class="card-title">Pre-Engineering Survey</h3>
-                <p class="card-text">
-                  Before any installation on the seabed, it is necessary to conduct
-                  pre-engineering survey on the proposed installation location or
-                  ro...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <div class="card-text" id="content1">
+                  <p>Before any installations on the seabed, it is necessary to conduct pre-engineering survey on the proposed installation location or route. Typically, the information is acquired using a combination of techniques:</p>
+                  <ul>
+                    <li>Seabed bathymetry and topography:<br>Echo sounding or swath echo sounding (particularly in areas of uneven seabed, outcrops, corals, pockmarks, sand waves, etc)<br></li>
+                    <li>Seabed features and obstructions:<br>Traditionally by side scan sonar, modern mosaicking systems will provide an acoustic "photograph" of the seabed in which prominent features and morphology can be more easily understood and interpreted.<br></li>
+                    <li>Detection of ferromagnetic objects and anomalies:<br>The Magnetometer system will be deployed to identify metallic objects, such as pipeline, cable and metallic debris.<br></li>
+                  </ul>
+                </div>
+                  
+                <button class="btn btn-primary view-more" onclick="toggleContent('content1', this)">View More</button>
               </div>
             </div>
           </div>
@@ -118,12 +145,16 @@
             <div class="service-card card h-100">
               <div class="card-body">
                 <h3 class="card-title">Pre-Installation Survey</h3>
-                <p class="card-text">
-                  The design of subsea routes or any subsea constructions normally
-                  takes a long period of time to be completed. When a
-                  pre-engineerin...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <div class="card-text" id="content2">
+                  <p>The design of subsea routes or any subsea constructions normally takes a long period of time to be completed. When a pre-engineering survey for designing a route is done, since noumerous events and changes might have taken place on the seabed in the long run, it is necessary to perform another survey within a brief period of time which is called pre-installation survey.
+                    Running a pre-installation survey ensures us whether there are any new sunken objects and debris or not. Therefore, this operation is a decisive factor in subsea constructions.
+                    All Results for pre-installation survey are presented in the following reports:</p>
+                    <ul>
+                      <li>Final text report \"Pre-installation survey final report\"</li>
+                      <li>Alignment sheets</li>
+                    </ul> 
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content2', this)">View More</button>
               </div>
             </div>
           </div>
@@ -131,12 +162,12 @@
             <div class="service-card card h-100">
               <div class="card-body">
                 <h3 class="card-title">Post-lay Survey</h3>
-                <p class="card-text">
-                  After the installation of pipeline, post-lay survey operation plays
-                  a vital route in determining the free span locations. Spans should
-                  be c...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <div class="card-text" id="content3">
+                  <p>After the installation of pipeline, post-lay survey operation plays a vital route in determining the free span locations. Spans should be corrected by placing grout
+                    bags beneath the pipeline and filling them using ordinary Portland liquid cement or grout.
+                    The below figures demonstrate some detected free spans using two technologies, side scan sonar and multibeam echosounder, while these two types of data are integrated:</p>
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content3', this)">View More</button>
               </div>
             </div>
           </div>
@@ -144,26 +175,44 @@
             <div class="service-card card h-100">
               <div class="card-body">
                 <h3 class="card-title">Geophysical Site Survey</h3>
-                <p class="card-text">
-                  Geophysical data provides vital information on the geology of the
-                  sub-bottom strata, required for any engineering, construction,
-                  drilling, ...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <div class="card-text" id="content4">
+                  <p>Geophysical data provides vital information on the geology of the sub-bottom strata, required for any engineering, construction, drilling, and production and mining activity. Detailed geophysical surveys and assessments of the seabed and sub-seabed plays a decisive factor in reducing the risks and make them cost-effective design of marine structures and subsea installations. Geophysical site survey is often conducted when a jack-up rig wants to approach to the platform and this operation ensures the client about seabed obstructions and geology of the seabed.</p>
+                  <p>What are we trying to find out through a geophysical site survey?</p>
+                  <ul>
+                    <li>Water depth, seabed relief, seabed gradients</li>
+                    <li>Obstructions, debris, wrecks, existing installations</li>
+                    <li>Seabed sediment types</li>
+                    <li>Shallow water geology, foundation conditions, trenching conditions</li>
+                    <li>Geo-hazards such as shallow gas</li>
+                  </ul>
+                  <p>The results of site survey operation include:</p>
+                  <ul>
+                    <li>Bathymetry charts in the site location</li>
+                    <li>Seabed feature charts (which shows the location of obstruction on the seabed)</li>
+                  </ul>
+                  <p>The results of geophysical site survey are shown in the following reports and charts:</p>
+                  <ul>  
+                    <li>Final text reports \"Geophysical site survey report\"</li>
+                    <li>Charts</li>
+                    <li>Bathymetric charts that all of depths reduced to LAT</li>
+                    <li>Seabed feature</li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content4', this)">View More</button>
               </div>
             </div>
           </div>
         </div>
-        <div id="offshoreServices" class="services-grid row" style="display: none">
+        <div id="offshoreServices" class="services-grid row"
+          style="display: none">
           <div class="col-md-5 col-lg-3 mb-4">
             <div class="service-card card h-100">
               <div class="card-body">
                 <h3 class="card-title">Barge And Tug Positioning</h3>
-                <p class="card-text">
-                  A precise positioning is a fundamental parameter for any survey and
-                  engineering tasks during sea operations. Such operations re...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <div class="card-text" id="content5">
+                  <p>A precise positioning is a fundamental parameter for any survey and engineering tasks during sea operations. Such operations rely on a global infrastructure and expertise to deliver high accuracy positioning, at any locations and any time. We are capable of providing the required equipment with your related projects on the scheduled time.<br>During barge support near the platforms, we are able to prepare a safe and accurate barge and tug management system for anchor handling operation. The system is mobilized on anchor handling vessels so that the exact vessel's position, speed and heading can be monitored from the main barge during the activity. Instructions for anchor deployment and recovery are followed through this system as well.</p>
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content5', this)">View More</button>
               </div>
             </div>
           </div>
@@ -171,11 +220,25 @@
             <div class="service-card card h-100">
               <div class="card-body">
                 <h3 class="card-title">Pipe & Cable Laying Survey Support</h3>
-                <p class="card-text">
-                  We offer the following activities during construction survey
-                  support.
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <div class="card-text" id="content6">
+                  <p>We offer the following activities during construction survey support : </p>
+                  <ul>
+                    <ul>
+                      <li>Pipe lay and cable lay positioning and touchdown monitoring</li>
+                      <li>Construction barge and support vessels positioning</li>
+                      <li>Anchor handling support</li>  
+                      <li>Structure installing guidance</li>
+                      <li>Acoustic underwater positioning</li>
+                      <li>ROV survey sensors and system integrations</li>
+                      <li>Jumper and spool piece metrology</li>
+                      <li>Dedicated ROV support vessels</li>
+                    </ul>
+                  </ul>
+                  <p>During barge constuction support for activities such as pipe lay, ASIA AKAM INDUSTRY CO. can provide a multi fug management system for the anchor operations, with all of the anchor handling vessels managed with the main barge for deploying the emplacement of precise position for the main barge its anchor.</p>
+                 
+                  <p>During installation, ASIA AKAM INDUSTRY CO. will position the barge and anchor handling vessels involved in the installation activity as well as assets that are being installed whetherit is pipe line or cable, jacket, PLEM, etc.<br>ASIA AKAM INDUSTRY CO. has a lot experience in precise positioning of different types of vessels in various projects. For this purpouses, we utilize high-technology equipment.</p>
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content6', this)">View More</button>
               </div>
             </div>
           </div>
@@ -183,50 +246,52 @@
             <div class="service-card card h-100">
               <div class="card-body">
                 <h3 class="card-title">Rig Positioning Services</h3>
-                <p class="card-text">
-                  A rig movement will be done when Mobile Offshore Drilling Unit
-                  (MODU) moves from one well location to another. Our profession...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <div class="card-text" id="content7">
+                  <p>A rig movement will be done when Mobile Offshore Drilling Unit (MODU) moves from one well location to another. Our profession is to provide positioning and navigation for the MODU, while moving from one location to the next.<br>The surveying equipment includes DGPS receivers, gyro compasses and computers along with positioning and navigation software.</p>
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content7', this)">View More</button>
               </div>
             </div>
           </div>
           <div class="col-md-5 col-lg-3 mb-4">
             <div class="service-card card h-100">
               <div class="card-body">
-                <h3 class="card-title">Jacket/Topside Installation and dimension control Services</h3>
-                <p class="card-text">
-                  We have sufficient experience in jacket and subsea installation by
-                  utilizing the most recent methods and technologies. Precise
-                  positioni...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <h3 class="card-title">Jacket/Topside Installation and dimension
+                  control Services</h3>
+                  <div class="card-text" id="content8">
+                    <p>We have sufficient experience in jacket and subsea installation by utilizing the most recent methods and technologies. Precise positioning system will be set up for jacket installer barge, jacket or any offshore construction that should be installed on the seabed. Real time position of jacket and barge will be controlled from the main barge and the as-built jacket leg location, can be checked by this highly accurate positioning system.<br>Our surveyors will navigate the crane and barge position to set up jackets at the real position. In addition, topside and jacket dimensions will be controlled in the yard before installation.</p>
+                  </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content8', this)">View More</button>
               </div>
             </div>
           </div>
           <div class="col-md-5 col-lg-3 mb-4">
             <div class="service-card card h-100">
               <div class="card-body">
-                <h3 class="card-title">Jacket/Topside Installation and dimension control Services</h3>
-                <p class="card-text">
-                  We have sufficient experience in jacket and subsea installation by
-                  utilizing the most recent methods and technologies. Precise
-                  positioni...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <h3 class="card-title">Underwater Positioning</h3>
+                <div class="card-text" id="content9">
+                  <p>In many cases, for offshore installation or inspection operations, it would be essential to have a highly accurate positioning system. There are many different classes of underwater positioning systems that each has been established for the special purposes.<br>We conduct various types of subsea installations and operations as below.</p>
+                  <ul>
+                    <li>Diving positioning support</li>
+                    <li>Deep water ROV positioning support</li>
+                    <li>Spool installation positioning support</li>
+                    <li>Spool meterology</li>
+                    <li>Pipe line support installation</li>
+                    <li>Rise angle monitoring</li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content9', this)">View More</button>
               </div>
             </div>
           </div>
           <div class="col-md-5 col-lg-3 mb-4">
             <div class="service-card card h-100">
               <div class="card-body">
-                <h3 class="card-title">Jacket/Topside Installation and dimension control Services</h3>
-                <p class="card-text">
-                  We have sufficient experience in jacket and subsea installation by
-                  utilizing the most recent methods and technologies. Precise
-                  positioni...
-                </p>
-                <button class="btn btn-primary view-more">View More</button>
+                <h3 class="card-title">LBL Spool Meteorology</h3>
+                <div class="card-text" id="content10">
+                  <p>Prior to design and building of a spool structure, the engineering studies and special underwater measurements are essential to be conducted to avoid waste of money and time in offshore operation. LBL meteorology is the best and known method for this type of project. We have undertaken numerous LBL meteorology and spool installation projects in the Persian Gulf and will be able to handle this type of the project by own resources. For more information about detail of performed job, please refer to list of projects.</p>
+                </div>
+                <button class="btn btn-primary view-more" onclick="toggleContent('content10', this)">View More</button>
               </div>
             </div>
           </div>
@@ -276,21 +341,28 @@
         <div class="contact-form">
           <h2>Send us a Message</h2>
           <form id="contactForm">
-            <input type="text" placeholder="Your Name" class="form-input" required>
-            <input type="email" placeholder="Your Email" class="form-input" required>
-            <input type="tel" placeholder="Phone Number" class="form-input">
-            <input type="text" placeholder="Company Name" class="form-input">
-            <textarea placeholder="Your Message" rows="4" class="form-input" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" id="name" placeholder="Your Name"
+              class="form-input" required>
+            <input type="email" id="email" placeholder="Your Email"
+              class="form-input" required>
+            <input type="tel" id="phone" placeholder="Phone Number"
+              class="form-input">
+            <input type="text" id="company" placeholder="Company Name"
+              class="form-input">
+            <textarea id="message" placeholder="Your Message" rows="4"
+              class="form-input" required></textarea>
+            <a href="#" id="sendEmail" class="btn btn-primary">Send Message</a>
           </form>
         </div>
         <div class="contact-info">
           <h2>Contact Information</h2>
           <br>
-          <p><i class="fa-solid fa-location-dot fa-lg"></i> Jl. DI. Panjaitan No.63 RT33, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan,
+          <p><i class="fa-solid fa-location-dot fa-lg"></i> Jl. DI. Panjaitan
+            No.63, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan,
             Kalimantan Timur 76122</p>
-          <p><i class="fa-solid fa-phone fa-lg"></i> (800) 900-200-300</p>
-          <p><i class="fa-solid fa-envelope fa-lg "></i> info@binavmajusejahtera.com</p>
+          <p><i class="fa-solid fa-phone fa-lg"></i> +62 811 544 2085</p>
+          <p><i class="fa-solid fa-envelope fa-lg "></i>
+            info@binavmajusejahtera.com</p>
           <!-- <div class="social-links">
               <a href="#" aria-label="Twitter">🐦</a>
               <a href="#" aria-label="LinkedIn">in</a>
@@ -304,8 +376,11 @@
           <div class="row">
             <div class="col-md-4 mb-4 mb-md-0">
               <h5 class="mb-3">About PT. Binav Maju Sejahtera</h5>
-              <p>We are a leading provider of innovative mapping, surveying, and cartographic products. Our commitment to precision and excellence
-                drives us to deliver cutting-edge solutions for efficient fleet management and operational safety.</p>
+              <p>We are a leading provider of innovative mapping, surveying, and
+                cartographic products. Our commitment to precision and
+                excellence
+                drives us to deliver cutting-edge solutions for efficient fleet
+                management and operational safety.</p>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
               <h5 class="mb-3">Quick Links</h5>
@@ -315,28 +390,37 @@
                 <li><a href="#services" class="text-light">Services</a></li>
                 <li><a href="#gallery" class="text-light">Gallery</a></li>
                 <li><a href="#ourclient" class="text-light">Our Clients</a></li>
-                <li><a href="https://binav-avts.id/" class="text-light">Vessel AVTS</a></li>
+                <li><a href="https://binav-avts.id/" class="text-light">Vessel
+                    AVTS</a></li>
               </ul>
             </div>
             <div class="col-md-4">
               <h5 class="mb-3">Contact Us</h5>
               <ul class="list-unstyled">
-                <li><i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, Jakarta, Indonesia</li>
-                <li><i class="fas fa-phone me-2"></i> +62 123 456 7890</li>
-                <li><i class="fas fa-envelope me-2"></i> info@binavmajusejahtera.com</li>
+                <li><i class="fas fa-map-marker-alt me-2"></i> Jl. DI. Panjaitan
+                  No.63, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan,
+                  Kalimantan Timur 76122</li>
+                <li><i class="fas fa-phone me-2"></i> +62 811 544 2085</li>
+                <li><i class="fas fa-envelope me-2"></i>
+                  info@binavmajusejahtera.com</li>
               </ul>
               <div class="mt-3">
-                <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-light me-3"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-light me-3"><i
+                    class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light me-3"><i
+                    class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-light"><i
+                    class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
           <hr class="my-4">
           <div class="row">
             <div class="col-md-6 text-center text-md-start">
-              <p class="mb-0">&copy; 2024 PT. Binav Maju Sejahtera. All rights reserved.</p>
+              <p class="mb-0">&copy; 2024 PT. Binav Maju Sejahtera. All rights
+                reserved.</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
               <a href="#" class="text-light me-3">Privacy Policy</a>
@@ -350,7 +434,38 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
       <script>
+document.getElementById('sendEmail').addEventListener('click', function(e) {
+  e.preventDefault();
+  
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+  var company = document.getElementById('company').value;
+  var message = document.getElementById('message').value;
+  
+  var subject = "New Contact Form Submission";
+  var body = "Name: " + name + "\n";
+  body += "Email: " + email + "\n";
+  body += "Phone: " + phone + "\n";
+  body += "Company: " + company + "\n\n";
+  body += "Message:\n" + message;
+  
+  var mailtoLink = "mailto:bahrunsyahtan@gmail.com" +
+                   "?subject=" + encodeURIComponent(subject) +
+                   "&body=" + encodeURIComponent(body);
+  
+  window.location.href = mailtoLink;
+});
+
+function toggleContent(contentId, button) {
+            const content = document.getElementById(contentId);
+            content.classList.toggle('expanded');
+            button.textContent = content.classList.contains('expanded') ? 'View Less' : 'View More';
+        }
+
+
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -410,11 +525,12 @@
           carousel1.offsetHeight;
           carousel1.style.transition = "transform 0.1s linear";
         } else {
-          carousel1.style.transform = `translateX(${position}px)`;
+          carousel1.style.transform = 
+          `translateX(${position}px)`;
         }
 
         requestAnimationFrame(slide);
-      }
+      };
 
       slide();
 

@@ -284,3 +284,19 @@ html, body {
       height: 100px;
     }
   }
+  footer {
+    background-color: #011B2B;
+  }
+  
+  footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #0066cc !important;
+  }
+  
+  footer .fab {
+    font-size: 1.5rem;
+  }

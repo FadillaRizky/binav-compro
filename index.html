@@ -336,10 +336,51 @@
               <button class="btn btn-primary view-more" onclick="toggleContent('content10', this)">View More</button>
             </div>
           </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery7.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery8.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery9.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery10.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery11.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery12.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery13.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery14.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery15.jpeg" alt="Web Design" />
+          </div>
+          <div class="carousel1-item">
+            <img src="assets/gallery16.jpeg" alt="Web Design" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <br>
+      <div class="video-row">
+        <video controls width="640" height="360">
+          <source src="assets/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls width="640" height="360">
+          <source src="assets/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+    </section>
 
   <section id="gallery" class="bg-gallery" style="padding: 30px">
     <br />
@@ -566,39 +607,40 @@
 
       slide();
 
-      document.addEventListener('DOMContentLoaded', function () {
-        const clientGrid = document.querySelector(".client-grid");
-        const clients = [
-          "PT. Anadarko.png",
-          "PT. Apexindo.png",
-          "PT. Aquamarine.png",
-          "PT. Arung.jpg",
-          "PT. Arutmin.jpg",
-          "PT. BKI.png",
-          "PT. Chevron.png",
-          "PT. CNOOC.jpg",
-          "PT. Dewirahmi.png",
-          "PT. Elnusa.png",
-          "PT. Feria.png",
-          "PT. Geo Ocean.png",
-          "PT. Geotindo.png",
-          "PT. Golder Associates.png",
-          "PT. IndoSraits.png",
-          "PT. JDI.jpg",
-          "PT. Kideco.png",
-          "PT. Lancar Rejeki.png",
-          "PT. Maspion.jpg",
-          "PT. Meindo.png",
-          "PT. Modern Widya Tehnical.png",
-          "PT. ModernWidya.jpg",
-          "PT. Onasis.png",
-          "PT. PancaDuta.png",
-          "PT. PDC.jpg",
-          "PT. Pertamina PHM.jpg",
-          "PT. PutraTunggalMandiri.jpg",
-          "PT. Raga Perkasa Ekaguna.jpg",
-          "PT. Taka.png"
-        ];
+      document.addEventListener('DOMContentLoaded', function() {
+      const clientGrid = document.querySelector(".client-grid");
+      const clients = [
+        "PT. Anadarko.png",
+        "PT. Apexindo.png",
+        "PT. Aquamarine.png",
+        "PT. Arung.jpg",
+        "PT. Arutmin.jpg",
+        "PT. BKI.png",
+        "PT. Chevron.png",
+        "PT. CNOOC.jpg",
+        "PT. Dewirahmi.png",
+        "PT. Elnusa.png",
+        "PT. Feria.png",
+        "PT. Geo Ocean.png",
+        "PT. Geotindo.png",
+        "PT. Golder Associates.png",
+        "PT. IndoSraits.png",
+        "PT. JDI.jpg",
+        "PT. Kideco.png",
+        "PT. Lancar Rejeki.png",
+        "PT. Maspion.jpg",
+        "PT. Meindo.png",
+        "PT. Modern Widya Tehnical.png",
+        "PT. ModernWidya.jpg",
+        "PT. Onasis.png",
+        "PT. PancaDuta.png",
+        "PT. PDC.jpg",
+        "PT. Pertamina PHM.jpg",
+        "PT. PutraTunggalMandiri.jpg",
+        "PT. Raga Perkasa Ekaguna.jpg",
+        "PT. Taka.png",
+        "PT. KPI.jpg",
+      ];
 
         clients.forEach(client => {
           const clientItem = document.createElement("div");

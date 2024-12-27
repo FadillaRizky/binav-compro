@@ -423,3 +423,14 @@ button:hover {
   /* background-image: url(./assets/about_us.png); */
   background-color: var(--primary-color);
 }
+
+.video-row {
+  display: flex;
+  justify-content: space-between; /* Space between the videos */
+  gap: 10px; /* Adds some spacing between videos */
+}
+video {
+
+  /* max-width: 100%; Ensures videos are responsive */
+  /* height: auto; */
+}

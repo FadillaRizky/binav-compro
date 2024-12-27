@@ -70,6 +70,7 @@ body {
 .bg-gallery {
   background-color: var(--secondary-color);
 }
+
 /* Content styles */
 .content {
   flex-grow: 1;
@@ -137,6 +138,7 @@ body {
   max-height: 400px;
   object-fit: cover;
 }
+
 .desc-content h2,
 p {
   color: #fff;
@@ -183,11 +185,13 @@ p {
   overflow: hidden;
   transition: height 0.3s ease;
 }
+
 .card-content {
   height: 100px;
   overflow: hidden;
   transition: height 0.3s ease;
 }
+
 .card-text.expanded {
   height: auto;
 }
@@ -215,7 +219,8 @@ p {
 }
 
 .card-title {
-  height: 120px; /* Fixed height for title */
+  height: 120px;
+  /* Fixed height for title */
   display: flex;
   align-items: center;
   margin: 0;
@@ -351,26 +356,32 @@ footer .fab {
   background-color: #fff;
   overflow: hidden;
 }
+
 .contact-form {
   flex: 2;
   padding: 30px;
 }
+
 .contact-info {
   flex: 1;
   background-color: #12335e;
   color: #fff;
   padding: 30px;
 }
+
 h2 {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 .form-group {
   margin-bottom: 20px;
 }
+
 .form-input {
   margin-bottom: 10px;
 }
+
 input,
 textarea {
   width: 100%;
@@ -380,9 +391,11 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 10px;
 }
+
 textarea {
   resize: vertical;
 }
+
 button {
   background-color: #3498db;
   color: #fff;
@@ -391,28 +404,35 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #2980b9;
 }
+
 .contact-info p {
   margin-bottom: 10px;
 }
+
 .contact-info i {
   margin-right: 10px;
 }
+
 .social-links {
   margin-top: 20px;
 }
+
 .social-links a {
   color: #fff;
   margin-right: 10px;
   font-size: 20px;
   text-decoration: none;
 }
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
   }
+
   .contact-form,
   .contact-info {
     width: 100%;
@@ -423,14 +443,44 @@ button:hover {
   /* background-image: url(./assets/about_us.png); */
   background-color: var(--primary-color);
 }
-
-.video-row {
-  display: flex;
-  justify-content: space-between; /* Space between the videos */
-  gap: 10px; /* Adds some spacing between videos */
+.video-section {
+  background-color: var(--secondary-color);
 }
-video {
 
-  /* max-width: 100%; Ensures videos are responsive */
-  /* height: auto; */
+.video-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.video-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.video-player {
+  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background-color: #000;
+}
+
+/* Custom styling for video controls */
+video::-webkit-media-controls {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+video::-webkit-media-controls-panel {
+  padding: 0 10px;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-fullscreen-button {
+  color: white;
+}
+
+video::-webkit-media-controls-timeline {
+  background-color: rgba(255, 255, 255, 0.2);
 }

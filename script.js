@@ -1,5 +1,5 @@
 // Navbar scroll effect
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.classList.add('navbar-scrolled');
@@ -18,28 +18,28 @@ const clients = [
     "PT. Kideco.png", "PT. Lancar Rejeki.png", "PT. Maspion.jpg", "PT. Meindo.png",
     "PT. Modern Widya Tehnical.png", "PT. ModernWidya.jpg", "PT. Onasis.png", "PT. PancaDuta.png",
     "PT. PDC.jpg", "PT. Pertamina PHM.jpg", "PT. PutraTunggalMandiri.jpg", "PT. Raga Perkasa Ekaguna.jpg",
-    "PT. Taka.png","PT. KPI.jpg",
+    "PT. Taka.png", "PT. KPI.jpg",
 ];
 
 clients.forEach(client => {
     const col = document.createElement('div');
     col.className = 'col';
-    
+
     const card = document.createElement('div');
     card.className = 'card h-100';
-    
+
     const img = document.createElement('img');
     img.src = `assets/client/${client}`;
     img.className = 'card-img-top';
     img.alt = client.replace('.png', '').replace('.jpg', '');
-    
+
     const cardBody = document.createElement('div');
     cardBody.className = 'card-body';
-    
+
     const cardText = document.createElement('p');
     cardText.className = 'card-text text-center';
     cardText.textContent = client.replace('.png', '').replace('.jpg', '');
-    
+
     cardBody.appendChild(cardText);
     card.appendChild(img);
     card.appendChild(cardBody);
@@ -61,44 +61,75 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Initialize Bootstrap tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
+    return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 
 // Services tab functionality
 var servicesTab = document.getElementById('servicesTabs')
 servicesTab.addEventListener('click', function (event) {
-  event.preventDefault()
-  if (event.target.classList.contains('nav-link')) {
-    var tabId = event.target.getAttribute('data-bs-target')
-    var tabContent = document.querySelector(tabId)
-    var allTabContents = document.querySelectorAll('.tab-pane')
-    var allTabLinks = servicesTab.querySelectorAll('.nav-link')
+    event.preventDefault()
+    if (event.target.classList.contains('nav-link')) {
+        var tabId = event.target.getAttribute('data-bs-target')
+        var tabContent = document.querySelector(tabId)
+        var allTabContents = document.querySelectorAll('.tab-pane')
+        var allTabLinks = servicesTab.querySelectorAll('.nav-link')
 
-    allTabContents.forEach(function(content) {
-      content.classList.remove('show', 'active')
-    })
-    allTabLinks.forEach(function(link) {
-      link.classList.remove('active')
-    })
+        allTabContents.forEach(function (content) {
+            content.classList.remove('show', 'active')
+        })
+        allTabLinks.forEach(function (link) {
+            link.classList.remove('active')
+        })
 
-    tabContent.classList.add('show', 'active')
-    event.target.classList.add('active')
-  }
+        tabContent.classList.add('show', 'active')
+        event.target.classList.add('active')
+    }
 })
 
 // Animate on scroll
 function animateOnScroll() {
     var elements = document.querySelectorAll('.animate-on-scroll');
-    
-    elements.forEach(function(element) {
+
+    elements.forEach(function (element) {
         var position = element.getBoundingClientRect();
-        
+
         // Checking for partial visibility
-        if(position.top < window.innerHeight && position.bottom >= 0) {
+        if (position.top < window.innerHeight && position.bottom >= 0) {
             element.classList.add('animate');
         }
     });
 }
+
+// Video player
+document.addEventListener('DOMContentLoaded', function() {
+    const videos = document.querySelectorAll('.video-player');
+    
+    // Intersection Observer for autoplay
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.play().catch(() => {
+              // Autoplay was prevented
+              console.log('Autoplay prevented');
+            });
+          } else {
+            entry.target.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+  
+    // Observe all videos
+    videos.forEach(video => {
+      observer.observe(video);
+      
+      // Ensure videos are muted initially (required for autoplay)
+      video.muted = true;
+    });
+  });
+  
 
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);

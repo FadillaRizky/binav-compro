@@ -18,7 +18,7 @@ const clients = [
     "PT. Kideco.png", "PT. Lancar Rejeki.png", "PT. Maspion.jpg", "PT. Meindo.png",
     "PT. Modern Widya Tehnical.png", "PT. ModernWidya.jpg", "PT. Onasis.png", "PT. PancaDuta.png",
     "PT. PDC.jpg", "PT. Pertamina PHM.jpg", "PT. PutraTunggalMandiri.jpg", "PT. Raga Perkasa Ekaguna.jpg",
-    "PT. Taka.png"
+    "PT. Taka.png","PT. KPI.jpg",
 ];
 
 clients.forEach(client => {

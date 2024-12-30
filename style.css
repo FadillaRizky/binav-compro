@@ -452,17 +452,56 @@ button:hover {
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  background-color: #000;
+  margin: 0 auto;
 }
 
-.video-wrapper:hover {
-  transform: translateY(-5px);
+.video-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.video-container.portrait {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.video-container.landscape {
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container.portrait .video-player {
+  width: 100%;
+  max-height: 80vh;
+}
+
+.video-container.landscape .video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-player {
   display: block;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  object-fit: contain;
   background-color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-container.portrait {
+      max-width: 100%;
+  }
+  
+  .video-container.portrait .video-player {
+      max-height: 70vh;
+  }
 }
 
 /* Custom styling for video controls */
@@ -472,15 +511,4 @@ video::-webkit-media-controls {
 
 video::-webkit-media-controls-panel {
   padding: 0 10px;
-}
-
-video::-webkit-media-controls-play-button,
-video::-webkit-media-controls-volume-slider,
-video::-webkit-media-controls-mute-button,
-video::-webkit-media-controls-fullscreen-button {
-  color: white;
-}
-
-video::-webkit-media-controls-timeline {
-  background-color: rgba(255, 255, 255, 0.2);
 }

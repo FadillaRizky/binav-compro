@@ -512,3 +512,23 @@ video::-webkit-media-controls {
 video::-webkit-media-controls-panel {
   padding: 0 10px;
 }
+
+
+.bg-grid-container{
+  background-color: var(--secondary-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr);  /* 2 rows */
+  gap: 10px; /* Space between images */
+  /* max-width: 400px; Adjust width */
+  margin: auto;
+  padding: 10px;
+}
+.grid-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners */
+}
